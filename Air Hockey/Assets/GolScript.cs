@@ -9,10 +9,11 @@ public class GolScript : MonoBehaviour
         if (hitInfo.tag == "Ball")
         {
             string wallName = transform.name;
-            //GameManager.Score(wallName);
+            GameManager.Score(wallName);
             hitInfo.gameObject.SendMessage("RestartGame", null, SendMessageOptions.RequireReceiver);
         }
     }
+    
 
 }
 

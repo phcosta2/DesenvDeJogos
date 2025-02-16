@@ -4,24 +4,21 @@ using UnityEngine;
 
 public class PlayerControl : MonoBehaviour
 {
+    private Rigidbody2D rb2d;
 
-    public float boundY = 2.25f;            // Define os limites em Y
-    private Rigidbody2D rb2d;               // Define o corpo rigido 2D que representa a raquete
     // Start is called before the first frame update
     void Start()
     {
-        rb2d = GetComponent<Rigidbody2D>();     // Inicializa a raquete
-
+        rb2d = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        var pos = transform.position;
-        pos.x = mousePos.x;
-        pos.y = mousePos.y;
-        transform.position = pos;
-
+        // Limitar a posição com Mathf.Clamp
+        float clampedX = Mathf.Clamp(mousePos.x, -4.5f, 4.5f);
+        float clampedY = Mathf.Clamp(mousePos.y, 0f, 10f);
+        transform.position = new Vector3(clampedX, clampedY, transform.position.z);
     }
 }
