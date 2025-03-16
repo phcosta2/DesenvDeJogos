@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Barreira
+  - InvasorMeio
+  - InvasorCima
+  - InvasorBaixo
+  - Invasor
+  - Nave
   layers:
   - Default
   - TransparentFX
