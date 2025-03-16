@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: cd10ec83baca76643934ac8ae2a2edd4
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - Vida1: {fileID: 3278845561591450209, guid: d5e40dd27a7bbcf4b847bd954e1a3627, type: 3}
+  - Vida2: {fileID: 5994728140563299260, guid: 6a7fbfd195f9dac479c8c963f6085ed2, type: 3}
+  - Vida3: {fileID: 676711930756854111, guid: 0778d2c239833974cbbb21859359e3dc, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
